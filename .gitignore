@@ -1,0 +1,7 @@
+# Lokale verktøy-filer
+.claude/
+*.log
+
+# OS-filer
+Thumbs.db
+.DS_Store

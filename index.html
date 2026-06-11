@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+  <meta charset="UTF-8">
+  <title>Street Fighter Mesh</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      background: #0a0a0a;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      color: #fff;
+    }
+    canvas {
+      border: 3px solid #333;
+      border-radius: 4px;
+      image-rendering: auto;
+      max-width: 100%;
+      height: auto;
+    }
+    #loading {
+      font-size: 18px;
+      color: #e63946;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <canvas id="game"></canvas>
+  <div id="loading">Laster...</div>
+
+  <script src="js/audio.js?v=38"></script>
+  <script src="js/engine.js?v=38"></script>
+  <script src="js/fighter.js?v=38"></script>
+  <script src="js/bonus.js?v=38"></script>
+  <script src="js/select.js?v=38"></script>
+
+  <script src="characters/runar_red.js?v=38"></script>
+  <script src="characters/ken_masters.js?v=38"></script>
+  <script src="characters/ingrid_alexandra.js?v=38"></script>
+  <script src="characters/aksel_svindal.js?v=38"></script>
+  <script src="characters/stian_blipp.js?v=38"></script>
+  <script src="characters/therese_johaug.js?v=38"></script>
+  <script src="characters/kristoffer_joner.js?v=38"></script>
+  <script src="characters/mathias.js?v=38"></script>
+  <script src="characters/rishi.js?v=38"></script>
+  <script src="characters/besar.js?v=38"></script>
+
+  <script src="stages/dojo.js?v=38"></script>
+
+  <script>
+    (async function () {
+      Game.init("game");
+
+      const ROSTER = [
+        RUNAR_RED,
+        KEN_MASTERS,
+        MATHIAS,
+        INGRID_ALEXANDRA,
+        AKSEL_SVINDAL,
+        STIAN_BLIPP,
+        RISHI,
+        BESAR,
+        THERESE_JOHAUG,
+        KRISTOFFER_JONER
+      ];
+
+      const STAGES = [
+        STAGE_MANDORA,
+        STAGE_COLLETS_GATE,
+        STAGE_TROMSO_ROUGH,
+        STAGE_SYDEN,
+        STAGE_USA
+      ];
+
+      await Game.preloadStageImages(STAGES);
+
+      SelectScreen.init(ROSTER, STAGES);
+
+      document.getElementById("loading").style.display = "none";
+      Game.start();
+    })();
+  </script>
+</body>
+</html>
