@@ -1,6 +1,6 @@
 # Street Fighter Mesh — Mandora Edition
 
-Et 2D fighting-spill i klassisk Street Fighter II-stil, bygget med HTML5 Canvas og vanilla JavaScript. Pictures are made with chatgpt and used as a base for creating animation (Sprite sheets).  Alle sprites er AI-generert med [AutoSprite](https://autosprite.io), stemmer med [ElevenLabs](https://elevenlabs.io).
+Et 2D fighting-spill i klassisk Street Fighter II-stil, bygget med HTML5 Canvas og vanilla JavaScript. Pictures are made with chatgpt and used as a base for creating animation (Sprite sheets).  Alle sprites er AI-generert med [AutoSprite](https://autosprite.io), stemmer med [ElevenLabs](https://elevenlabs.io). Created with Claude code and MCP-servers (Auto-sprite and Elevenlabs)
 
 ## Spill
 
