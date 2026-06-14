@@ -16,7 +16,7 @@ og gå til http://localhost:3000
 
 - **1 spiller** — kjemp mot CPU-en
 - **2 spillere** — lokal multiplayer på samme tastatur
-- **Bonus Stage** — knus logoen før tiden går ut (à la SF2 sin bil-bane)
+- **Bonus Stage** — knus Excel-arket før tiden går ut; cellene sprekker for hvert slag (à la SF2 sin bil-bane)
 
 ## Kontroller
 
